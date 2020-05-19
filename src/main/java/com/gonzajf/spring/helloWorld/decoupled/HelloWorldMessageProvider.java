@@ -1,4 +1,4 @@
-package com.gonzajf.helloWorld.decoupled;
+package com.gonzajf.spring.helloWorld.decoupled;
 
 public class HelloWorldMessageProvider implements  MessageProvider {
 

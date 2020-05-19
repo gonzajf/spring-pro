@@ -1,4 +1,4 @@
-package com.gonzajf.helloWorld;
+package com.gonzajf.spring.helloWorld;
 
 public class HelloWorld {
 

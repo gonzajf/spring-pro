@@ -1,8 +1,4 @@
-package com.gonzajf.helloWorld.decoupled;
-
-import com.gonzajf.helloWorld.decoupled.MessageProvider;
-
-import java.text.MessageFormat;
+package com.gonzajf.spring.helloWorld.decoupled;
 
 public interface MessageRenderer {
 

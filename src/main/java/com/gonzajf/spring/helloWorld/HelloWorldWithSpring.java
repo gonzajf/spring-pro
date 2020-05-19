@@ -1,9 +1,8 @@
-package com.gonzajf.helloWorld;
+package com.gonzajf.spring.helloWorld;
 
-import com.gonzajf.helloWorld.decoupled.MessageRenderer;
+import com.gonzajf.spring.helloWorld.decoupled.MessageRenderer;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class HelloWorldWithSpring {
 
