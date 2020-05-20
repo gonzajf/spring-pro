@@ -8,6 +8,12 @@
     <artifactId>application-context</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <parent>
+        <groupId>io.gonzajf</groupId>
+        <artifactId>pro-spring-maven</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
     <dependencies>
         <dependency>
             <groupId>io.gonzajf</groupId>

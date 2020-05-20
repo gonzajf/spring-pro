@@ -5,7 +5,7 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
         http://www.springframework.org/schema/beans/spring-beans.xsd">
     <bean id="provider"
-          class="com.gonzajf.spring.helloWorld.decoupled.HelloWorldMessageProvider"/>
+          class="com.gonzajf.spring.annotation.HelloWorldMessageProvider"/>
     <bean id="renderer"
           class="com.gonzajf.spring.helloWorld.decoupled.StandardOutMessageRenderer"
           p:messageProvider-ref="provider"/>

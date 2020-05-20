@@ -1,4 +1,4 @@
-package com.gonzajf.annotation;
+package com.gonzajf.spring.annotation;
 
 import com.gonzajf.spring.helloWorld.decoupled.MessageProvider;
 import org.springframework.stereotype.Component;

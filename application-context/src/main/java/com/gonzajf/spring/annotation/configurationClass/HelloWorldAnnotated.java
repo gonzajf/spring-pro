@@ -1,4 +1,4 @@
-package com.gonzajf.annotation.configurationClass;
+package com.gonzajf.spring.annotation.configurationClass;
 
 import com.gonzajf.spring.helloWorld.decoupled.MessageRenderer;
 import org.springframework.context.ApplicationContext;
