@@ -10,7 +10,7 @@ import org.springframework.context.support.GenericXmlApplicationContext;
 public class FieldInjectionTest {
 
     private static GenericXmlApplicationContext xmlApplicationContext;
-    
+
     @BeforeAll
     static void setup() {
         xmlApplicationContext =
