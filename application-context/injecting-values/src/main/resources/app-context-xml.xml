@@ -12,4 +12,15 @@
           p:height="1.92"
           p:programmer="false"
           p:ageInSeconds="1241401112"/>
+
+    <bean id="injectSimpleConfig"
+          class="com.gonzajf.spring.InjectSimpleConfig"/>
+
+    <bean id="injectSimpleSpel"
+          class="com.gonzajf.spring.xml.InjectSimpleSpel"
+          p:name="#{injectSimpleConfig.name}"
+          p:age="#{injectSimpleConfig.age + 1}"
+          p:height="#{injectSimpleConfig.height}"
+          p:programmer="#{injectSimpleConfig.programmer}"
+          p:ageInSeconds="#{injectSimpleConfig.ageInSeconds}"/>
 </beans>
