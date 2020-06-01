@@ -32,7 +32,6 @@ public class MethodInjectionTest {
     public void abstract_bean_test() {
         Singer singer = abstractBean.getSinger();
         singer1 = abstractBean.getSinger();
-
         Assertions.assertNotSame(singer1, singer);
     }
 

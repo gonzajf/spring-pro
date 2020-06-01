@@ -5,23 +5,23 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
         http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="singer" class="com.gonzajf.spring.ch3.Singer"
+    <bean id="singer" class="com.gonzajf.spring.Singer"
           scope="prototype"/>
     <bean id="abstractLookupBean"
-          class="com.gonzajf.spring.ch3.AbstractLookupDemoBean">
+          class="com.gonzajf.spring.AbstractLookupDemoBean">
         <lookup-method name="getSinger" bean="singer"/>
     </bean>
     <bean id="standardLookupBean"
-          class="com.gonzajf.spring.ch3.StandardLookupDemoBean">
+          class="com.gonzajf.spring.StandardLookupDemoBean">
         <property name="singer" ref="singer"/>
     </bean>
 
-    <bean id="methodReplacer" class="com.gonzajf.spring.ch3.FormatMessageReplacer"/>
-    <bean id="replacementTarget" class="com.gonzajf.spring.ch3.ReplacementTarget">
+    <bean id="methodReplacer" class="com.gonzajf.spring.FormatMessageReplacer"/>
+    <bean id="replacementTarget" class="com.gonzajf.spring.ReplacementTarget">
         <replaced-method name="formatMessage" replacer="methodReplacer">
             <arg-type>String</arg-type>
         </replaced-method>
     </bean>
-    <bean id="standardTarget" class="com.gonzajf.spring.ch3.ReplacementTarget"/>
+    <bean id="standardTarget" class="com.gonzajf.spring.ReplacementTarget"/>
 
 </beans>
