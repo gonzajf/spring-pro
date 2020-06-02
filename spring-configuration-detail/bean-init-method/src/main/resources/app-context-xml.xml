@@ -16,4 +16,18 @@
     <bean id="singerThree"
           class="com.gonzajf.spring.ch4.Singer"
           init-method="init" p:name="John Butler"/>
+
+
+    <bean id="singerWithInterfaceOne"
+          class="com.gonzajf.spring.ch4.SingerWithInterface"
+          p:name="John Mayer"  p:age="39"/>
+
+    <bean id="singerWithInterfaceTwo"
+          class="com.gonzajf.spring.ch4.SingerWithInterface"
+          p:age="72"/>
+
+    <bean id="singerWithInterfaceThree"
+          class="com.gonzajf.spring.ch4.SingerWithInterface"
+          p:name="John Butler"/>
+
 </beans>
