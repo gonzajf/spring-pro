@@ -1,8 +1,8 @@
 package com.gonzajf.spring.ch4;
 
-import org.springframework.beans.factory.InitializingBean;
+import javax.annotation.PostConstruct;
 
-public class SingerWithInterface implements InitializingBean {
+public class SingerWithJSR250 {
 
     private static final String DEFAULT_NAME = "Eric Clapton";
 
@@ -17,17 +17,16 @@ public class SingerWithInterface implements InitializingBean {
         this.age = age;
     }
 
-    public int getAge() {
-        return age;
-    }
-
     public String getName() {
         return name;
     }
 
-    @Override
-    public void afterPropertiesSet() throws Exception {
+    public int getAge() {
+        return age;
+    }
 
+    @PostConstruct
+    public void init() {
         System.out.println("Initializing bean");
         if(name == null) {
             System.out.println("Using default name");
@@ -35,7 +34,15 @@ public class SingerWithInterface implements InitializingBean {
         }
         if(age == Integer.MIN_VALUE) {
             throw new IllegalArgumentException(
-                    "You must set the age property of any beans of type " +  SingerWithInterface.class);
+                    "You must set the age property of any beans of type " +  SingerWithJSR250.class);
         }
+    }
+
+    @Override
+    public String toString() {
+        return "Singer{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                '}';
     }
 }
