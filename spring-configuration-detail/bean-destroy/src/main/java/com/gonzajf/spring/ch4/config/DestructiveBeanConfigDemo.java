@@ -10,7 +10,7 @@ import org.springframework.context.support.GenericApplicationContext;
 public class DestructiveBeanConfigDemo {
 
     @Configuration
-    static class  DestructiveBeanConfig {
+    public static class  DestructiveBeanConfig {
 
         @Lazy
         @Bean(initMethod = "afterPropertiesSet", destroyMethod = "destroy")
