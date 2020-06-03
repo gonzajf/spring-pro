@@ -8,4 +8,9 @@
           class="com.gonzajf.spring.ch4.DestructiveBean"
           destroy-method="destroy"
           p:filePath="#{systemProperties['java.io.tmpdir']}#{systemProperties['file.separator']}test.txt"/>
+
+    <bean id="destructiveBeanWithInterface"
+          class="com.gonzajf.spring.ch4.DestructiveBeanWithInterface"
+          destroy-method="destroy"
+          p:filePath="#{systemProperties['java.io.tmpdir']}#{systemProperties['file.separator']}test.txt"/>
 </beans>

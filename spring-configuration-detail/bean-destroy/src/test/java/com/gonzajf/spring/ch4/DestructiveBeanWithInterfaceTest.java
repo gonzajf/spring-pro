@@ -5,10 +5,10 @@ import org.springframework.context.support.GenericXmlApplicationContext;
 
 import java.io.File;
 
-public class DestructiveBeanTest {
+public class DestructiveBeanWithInterfaceTest {
 
     private static GenericXmlApplicationContext ctx;
-    private static DestructiveBean bean;
+    private static DestructiveBeanWithInterface bean;
     private static File file;
 
     @BeforeEach
@@ -16,7 +16,7 @@ public class DestructiveBeanTest {
         ctx = new GenericXmlApplicationContext();
         ctx.load("app-context-xml.xml");
         ctx.refresh();
-        bean = (DestructiveBean) ctx.getBean("destructiveBean");
+        bean = (DestructiveBeanWithInterface) ctx.getBean("destructiveBeanWithInterface");
     }
 
     @Test
@@ -32,4 +32,5 @@ public class DestructiveBeanTest {
         ctx.destroy();
         Assertions.assertFalse(file.exists());
     }
+
 }
