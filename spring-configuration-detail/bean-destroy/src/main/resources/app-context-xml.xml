@@ -11,6 +11,10 @@
 
     <bean id="destructiveBeanWithInterface"
           class="com.gonzajf.spring.ch4.DestructiveBeanWithInterface"
-          destroy-method="destroy"
           p:filePath="#{systemProperties['java.io.tmpdir']}#{systemProperties['file.separator']}test.txt"/>
+
+    <bean id="destructiveBeanWithJSR250"
+          class="com.gonzajf.spring.ch4.DestructiveBeanWithJSR250"
+          p:filePath="#{systemProperties['java.io.tmpdir']}#{systemProperties['file.separator']}test.txt"/>
+
 </beans>
